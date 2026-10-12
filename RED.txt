@@ -1,0 +1,5 @@
+Command: python3 tools/run_e2e.py
+Exit status: 1
+Result: 10 tests ran; 10 failed.
+Cause: the exact production CLI target returned the safe not-implemented status 99.
+Boundary: the fake PyUSB backend did not contact a physical USB device.

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coolpad-rouge-write-config"
+version = "0.1.0"
+description = "Host client for the Coolpad Rouge 3320A fastboot write-config command"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/teslamint/coolpad-rouge-write-config"
+Issues = "https://github.com/teslamint/coolpad-rouge-write-config/issues"
+
+[project.optional-dependencies]
+usb = ["pyusb>=1.2"]
+
+[project.scripts]
+coolpad-rouge-write-config = "coolpad_rouge_write_config.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

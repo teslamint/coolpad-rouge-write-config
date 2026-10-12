@@ -1,0 +1,4 @@
+Command: python3 tools/run_e2e.py
+Date: 2026-10-12
+Result: 11 tests passed; 0 failures; 0 errors.
+Transport: synthetic PyUSB only; no physical USB device was contacted.
